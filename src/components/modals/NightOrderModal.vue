@@ -26,7 +26,6 @@
           <span class="name">
             {{ role.name }}
             <span class="player" v-if="role.players.length">
-              <br />
               <small
                 v-for="(player, index) in role.players"
                 :class="{ dead: player.isDead }"
@@ -37,48 +36,35 @@
               >
             </span>
           </span>
-          <span
-            class="icon"
-            v-if="role.id"
-            :style="{
-              backgroundImage: `url(${
-                role.image && grimoire.isImageOptIn
-                  ? role.image
-                  : require('../../assets/icons/' +
-                      (role.imageAlt || role.id) +
-                      '.png')
-              })`
-            }"
-          ></span>
+          <div class="icon-wrapper">
+            <img
+              v-if="role.id"
+              :src="require('../../assets/icons/' + (role.imageAlt || role.id) + '.png')"
+              class="icon"
+            />
+          </div>
           <span class="reminder" v-if="role.firstNightReminder">
             {{ role.firstNightReminder }}
           </span>
         </li>
       </ul>
       <ul class="other">
-        <li class="headline">Other Nights</li>
+        <li class="headline">Autres nuits</li>
         <li
           v-for="role in rolesOtherNight"
           :key="role.name"
           :class="[role.team]"
         >
-          <span
-            class="icon"
-            v-if="role.id"
-            :style="{
-              backgroundImage: `url(${
-                role.image && grimoire.isImageOptIn
-                  ? role.image
-                  : require('../../assets/icons/' +
-                      (role.imageAlt || role.id) +
-                      '.png')
-              })`
-            }"
-          ></span>
+          <div class="icon-wrapper">
+            <img
+              v-if="role.id"
+              :src="require('../../assets/icons/' + (role.imageAlt || role.id) + '.png')"
+              class="icon"
+            />
+          </div>
           <span class="name">
             {{ role.name }}
             <span class="player" v-if="role.players.length">
-              <br />
               <small
                 v-for="(player, index) in role.players"
                 :class="{ dead: player.isDead }"
@@ -259,18 +245,15 @@ ul {
     display: flex;
     width: 100%;
     margin-bottom: 3px;
-    .icon {
-      width: 6vh;
-      background-size: cover;
-      background-position: 0 0;
-      flex-grow: 0;
-      flex-shrink: 0;
-      text-align: center;
-      margin: 0 2px;
-      &:after {
-        content: " ";
-        display: block;
-        padding-top: 66%;
+    .icon-wrapper {
+      overflow: hidden;
+      height: 4vh;
+
+      .icon {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
       }
     }
     .name {
@@ -282,6 +265,10 @@ ul {
       padding: 5px;
       border-left: 1px solid rgba(255, 255, 255, 0.4);
       border-right: 1px solid rgba(255, 255, 255, 0.4);
+      display: inline-flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: .2rem;
       small {
         color: #888;
         margin-right: 5px;

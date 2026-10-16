@@ -182,18 +182,20 @@
         :class="[reminder.role]"
         @click="removeReminder(reminder)"
       >
-        <span
-          class="icon"
-          :style="{
-            backgroundImage: `url(${
-              reminder.image && grimoire.isImageOptIn
-                ? reminder.image
-                : require('../assets/icons/' +
-                    (reminder.imageAlt || reminder.role) +
-                    '.png')
-            })`
-          }"
-        ></span>
+        <div class="icon-wrapper">
+          <span
+            class="icon"
+            :style="{
+              backgroundImage: `url(${
+                reminder.image && grimoire.isImageOptIn
+                  ? reminder.image
+                  : require('../assets/icons/' +
+                      (reminder.imageAlt || reminder.role) +
+                      '.png')
+              })`
+            }"
+          ></span>
+        </div>
         <span class="text">{{ reminder.name }}</span>
       </div>
     </template>
@@ -431,9 +433,9 @@ export default {
   .life {
     border-radius: 50%;
     width: 100%;
-    background: url("../assets/life.png") center center;
+    background-color: #f8e1c2;
+    border: 12px solid #e0b35e;
     background-size: 100%;
-    border: 3px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: transform 200ms ease-in-out;
@@ -456,17 +458,19 @@ export default {
     }
 
     .life {
-      background-image: url("../assets/death.png");
+      background-color: #202020;
+      border-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:after {
         content: " ";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        background: url("../assets/vote.png") center center no-repeat;
-        background-size: 50%;
-        height: 100%;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 100%;
+        background-color: #f8e1c2;
+        border: 12px solid #e0b35e;
         pointer-events: none;
       }
     }
@@ -842,7 +846,8 @@ li.move:not(.from) .player .overlay svg.move {
 
 /***** Reminder token *****/
 .circle .reminder {
-  background: url("../assets/reminder.png") center center;
+  background-color: #f8e1c2;
+  border: 7px solid #e0b35e;
   background-size: 100%;
   width: 50%;
   height: 0;
@@ -853,24 +858,39 @@ li.move:not(.from) .player .overlay svg.move {
   justify-content: center;
   margin: 5px 0 0 -25%;
   border-radius: 50%;
-  border: 3px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 200ms;
   cursor: pointer;
+  
+  .icon-wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 5%;
+    width: 55%;
+    height: 55%;
+
+    .icon {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 
   .text {
-    line-height: 90%;
     color: black;
-    font-size: 50%;
     font-weight: bold;
     text-align: center;
-    margin-top: 50%;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 15%;
-    text-shadow: 0 1px 1px #f6dfbd, 0 -1px 1px #f6dfbd, 1px 0 1px #f6dfbd,
-      -1px 0 1px #f6dfbd;
+    margin-top: 130%;
+    width: 80%;
+    font-size: .9rem;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1rem;
   }
 
   .icon,

@@ -12,18 +12,20 @@
         :key="reminder.role + ' ' + reminder.name"
         @click="addReminder(reminder)"
       >
-        <span
-          class="icon"
-          :style="{
-            backgroundImage: `url(${
-              reminder.image && grimoire.isImageOptIn
-                ? reminder.image
-                : require('../../assets/icons/' +
-                    (reminder.imageAlt || reminder.role) +
-                    '.png')
-            })`
-          }"
-        ></span>
+        <div class="icon-wrapper">
+          <span
+            class="icon"
+            :style="{
+              backgroundImage: `url(${
+                reminder.image && grimoire.isImageOptIn
+                  ? reminder.image
+                  : require('../../assets/icons/' +
+                      (reminder.imageAlt || reminder.role) +
+                      '.png')
+              })`
+            }"
+          ></span>
+        </div>
         <span class="text">{{ reminder.name }}</span>
       </li>
     </ul>
@@ -115,7 +117,8 @@ export default {
 
 <style scoped lang="scss">
 ul.reminders .reminder {
-  background: url("../../assets/reminder.png") center center;
+  background-color: #f8e1c2;
+  border: 7px solid #e0b35e;
   background-size: 100%;
   width: 14vh;
   height: 14vh;
@@ -127,28 +130,36 @@ ul.reminders .reminder {
   margin: 1%;
 
   border-radius: 50%;
-  border: 3px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   line-height: 100%;
   transition: transform 500ms ease;
 
-  .icon {
+  .icon-wrapper {
+    overflow: hidden;
     position: absolute;
-    top: 0;
-    width: 90%;
-    height: 90%;
-    background-size: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
+    top: 5%;
+    width: 55%;
+    height: 55%;
+    
+    .icon {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
   }
+
 
   .text {
     color: black;
-    font-size: 65%;
+    font-size: .65rem;
     font-weight: bold;
     text-align: center;
-    top: 28%;
+    top: 15%;
     width: 80%;
     line-height: 1;
   }

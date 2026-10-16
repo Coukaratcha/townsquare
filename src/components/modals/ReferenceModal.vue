@@ -11,7 +11,7 @@
       title="Show Night Order"
     />
     <h3>
-      Character Reference
+      Feuille de rôles
       <font-awesome-icon icon="address-card" />
       {{ edition.name || "Custom Script" }}
     </h3>
@@ -21,7 +21,7 @@
       :class="['team', team]"
     >
       <aside>
-        <h4>{{ team }}</h4>
+        <h4>{{ team == "townsfolk" ? "Villageois" : team == "outsider" ? "Marginal" : team == "minion" ? "Sbire" : "Démon" }}</h4>
       </aside>
       <ul>
         <li v-for="role in teamRoles" :class="[team]" :key="role.id">

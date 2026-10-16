@@ -84,7 +84,7 @@ export default {
 .token {
   border-radius: 50%;
   width: 100%;
-  background: url("../assets/token.png") center center;
+  background: rgba(246,239,229,0.94) !important;
   background-size: 100%;
   text-align: center;
   border: 3px solid black;
@@ -116,7 +116,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    margin-top: 3%;
+    margin-top: -20%;
   }
 
   span {
@@ -162,25 +162,18 @@ export default {
   .name {
     width: 100%;
     height: 100%;
-    font-size: 24px; // svg fonts are relative to document font size
+    font-size: 20px; // svg fonts are relative to document font size
     .label {
       fill: black;
-      stroke: white;
       stroke-width: 2px;
       paint-order: stroke;
-      font-family: "Papyrus", serif;
+      font-family: "YoungSerif", serif;
       font-weight: bold;
-      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       letter-spacing: 1px;
 
       @-moz-document url-prefix() {
         &.mozilla {
           // Vue doesn't support scoped media queries, so we have to use a second css class
-          stroke: none;
-          text-shadow: none;
-          filter: drop-shadow(0 1.5px 0 white) drop-shadow(0 -1.5px 0 white)
-            drop-shadow(1.5px 0 0 white) drop-shadow(-1.5px 0 0 white)
-            drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
         }
       }
     }

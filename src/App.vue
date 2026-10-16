@@ -149,11 +149,16 @@ export default {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "YoungSerif";
+  src: url("assets/fonts/YoungSerif-Regular.ttf") format("truetype");
+}
+
 html,
 body {
   font-size: 1.2em;
   line-height: 1.4;
-  background: url("assets/background.jpg") center center;
+  background: url("assets/background.webp") center center;
   background-size: cover;
   color: white;
   height: 100%;

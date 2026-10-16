@@ -111,8 +111,6 @@ export default {
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: url("../assets/demon-head.png") center center no-repeat;
-  background-size: auto 100%;
 
   li {
     font-weight: bold;

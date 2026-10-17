@@ -760,7 +760,7 @@
   },
   {
     "id": "clockmaker",
-    "name": "Clockmaker",
+    "name": "Horloger",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 41,
@@ -769,11 +769,11 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "You start knowing how many steps from the Demon to its nearest Minion."
+    "ability": "Lors de votre première nuit, vous apprenez à combien de places du Démon est assis son Sbire le plus proche."
   },
   {
     "id": "dreamer",
-    "name": "Dreamer",
+    "name": "Rêveur",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 42,
@@ -782,61 +782,61 @@
     "otherNightReminder": "The Dreamer points to a player. Show 1 good and 1 evil character token; one of these is correct.",
     "reminders": [],
     "setup": false,
-    "ability": "Each night, choose a player (not yourself or Travellers): you learn 1 good and 1 evil character, 1 of which is correct."
+    "ability": "Chaque nuit, choisissez un joueur (sauf vous-même ni les voyageurs) : vous apprenez 1 rôle bon et 1 rôle maléfique, dont 1 est correct."
   },
   {
     "id": "snakecharmer",
-    "name": "Snake Charmer",
+    "name": "Charmeur de serpents",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 20,
     "firstNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
     "otherNight": 11,
     "otherNightReminder": "The Snake Charmer points to a player. If that player is the Demon: swap the Demon and Snake Charmer character and alignments. Wake each player to inform them of their new role and alignment. The new Snake Charmer is poisoned.",
-    "reminders": ["Poisoned"],
+    "reminders": ["Empoisonné"],
     "setup": false,
-    "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned."
+    "ability": "Chaque nuit, choisissez un joueur en vie : si c’est un Démon, il échange de rôle et d’alignement avec vous, puis est empoisonné."
   },
   {
     "id": "mathematician",
-    "name": "Mathematician",
+    "name": "Mathématicien",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 52,
     "firstNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
     "otherNight": 71,
     "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of players whose ability malfunctioned due to other abilities.",
-    "reminders": ["Abnormal"],
+    "reminders": ["Anormal"],
     "setup": false,
-    "ability": "Each night, you learn how many players\u2019 abilities worked abnormally (since dawn) due to another character's ability."
+    "ability": "Chaque nuit, vous apprenez combien de joueurs ont vu leur capacité dysfonctionner (depuis l’aube) à cause de la capacité d’un autre rôle."
   },
   {
     "id": "flowergirl",
-    "name": "Flowergirl",
+    "name": "Fleuriste",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 57,
     "otherNightReminder": "Nod 'yes' or shake head 'no' for whether the Demon voted today. Place the 'Demon not voted' marker (remove 'Demon voted', if any).",
-    "reminders": ["Demon voted",
-        "Demon not voted"],
+    "reminders": ["Démon a voté",
+        "Démon n'a pas voté"],
     "setup": false,
-    "ability": "Each night*, you learn if a Demon voted today."
+    "ability": "Chaque nuit*, vous apprenez si un Démon a voté dans la journée."
   },
   {
     "id": "towncrier",
-    "name": "Town Crier",
+    "name": "Crieur public",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 58,
     "otherNightReminder": "Nod 'yes' or shake head 'no' for whether a Minion nominated today. Place the 'Minion not nominated' marker (remove 'Minion nominated', if any).",
-    "reminders": ["Minions not nominated",
-        "Minion nominated"],
+    "reminders": ["Sbire a nommé",
+        "Sbire n'a pas nommé"],
     "setup": false,
-    "ability": "Each night*, you learn if a Minion nominated today."
+    "ability": "Chaque nuit*, vous apprenez si un Sbire a nommé quelqu’un dans la journée."
   },
   {
     "id": "oracle",
@@ -849,7 +849,7 @@
     "otherNightReminder": "Show the hand signal for the number (0, 1, 2, etc.) of dead evil players.",
     "reminders": [],
     "setup": false,
-    "ability": "Each night*, you learn how many dead players are evil."
+    "ability": "Chaque nuit*, vous apprenez combien de joueurs morts sont maléfiques."
   },
   {
     "id": "savant",
@@ -862,51 +862,51 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false."
+    "ability": "Chaque jour, vous pouvez rendre visite au Conteur pour apprendre 2 informations en privé : l’une est vraie et l’autre est fausse."
   },
   {
     "id": "seamstress",
-    "name": "Seamstress",
+    "name": "Couturière",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 43,
     "firstNightReminder": "The Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
     "otherNight": 60,
     "otherNightReminder": "If the Seamstress has not yet used their ability: the Seamstress either shows a 'no' head signal, or points to two other players. If the Seamstress chose players , nod 'yes' or shake 'no' for whether they are of same alignment.",
-    "reminders": ["No ability"],
+    "reminders": ["Sans capacité"],
     "setup": false,
-    "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment."
+    "ability": "Une fois par partie, la nuit, choisissez 2 joueurs (sauf vous-même) : vous apprenez s’ils sont du même alignement."
   },
   {
     "id": "philosopher",
-    "name": "Philosopher",
+    "name": "Philosophe",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 2,
     "firstNightReminder": "The Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token and add the 'Is the Philosopher' reminder. If the character is in play, place the drunk marker by that player.",
     "otherNight": 2,
     "otherNightReminder": "If the Philosopher has not used their ability: the Philosopher either shows a 'no' head signal, or points to a good character on their sheet. If they chose a character: Swap the out-of-play character token with the Philosopher token and add the 'Is the Philosopher' reminder. If the character is in play, place the drunk marker by that player.",
-    "reminders": ["Drunk",
-        "Is the Philosopher"],
+    "reminders": ["Ivre",
+        "Est le Philosophe"],
     "setup": false,
-    "ability": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk."
+    "ability": "Une fois par partie, la nuit, choisissez un rôle bon : gagnez cette capacité. Si ce rôle est en jeu, il est ivre."
   },
   {
     "id": "artist",
-    "name": "Artist",
+    "name": "Artiste",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 0,
     "otherNightReminder": "",
-    "reminders": ["No ability"],
+    "reminders": ["Sans capacité"],
     "setup": false,
-    "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question."
+    "ability": "Une fois par partie, dans la journée, posez en privé une question fermée (oui/non) au Conteur."
   },
   {
     "id": "juggler",
-    "name": "Juggler",
+    "name": "Jongleur",
     "edition": "snv",
     "team": "townsfolk",
     "firstNight": 0,
@@ -915,7 +915,7 @@
     "otherNightReminder": "If today was the Juggler\u2019s first day: Show the hand signal for the number (0, 1, 2, etc.) of 'Correct' markers. Remove markers.",
     "reminders": ["Correct"],
     "setup": false,
-    "ability": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct."
+    "ability": "Lors de votre premier jour, devinez publiquement jusqu’à 5 rôles de joueurs. Cette nuit, vous apprenez combien étaient corrects."
   },
   {
     "id": "sage",
@@ -928,11 +928,11 @@
     "otherNightReminder": "If the Sage was killed by a Demon: Point to two players, one of which is that Demon.",
     "reminders": [],
     "setup": false,
-    "ability": "If the Demon kills you, you learn that it is 1 of 2 players."
+    "ability": "Si le Démon vous tue, vous apprenez qui est le Démon parmi 2 joueurs."
   },
   {
     "id": "mutant",
-    "name": "Mutant",
+    "name": "Bête de foire",
     "edition": "snv",
     "team": "outsider",
     "firstNight": 0,
@@ -941,37 +941,37 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "If you are \u201Cmad\u201D about being an Outsider, you might be executed."
+    "ability": "Si vous vous montrez « fou » d’être un Marginal, vous pourriez être exécuté."
   },
   {
     "id": "sweetheart",
-    "name": "Sweetheart",
+    "name": "Dulcinée",
     "edition": "snv",
     "team": "outsider",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 41,
     "otherNightReminder": "Choose a player that is drunk.",
-    "reminders": ["Drunk"],
+    "reminders": ["Ivre"],
     "setup": false,
-    "ability": "When you die, 1 player is drunk from now on."
+    "ability": "Lorsque vous mourez, 1 joueur est désormais ivre."
   },
   {
     "id": "barber",
-    "name": "Barber",
+    "name": "Barbier",
     "edition": "snv",
     "team": "outsider",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 40,
     "otherNightReminder": "If the Barber died today: Wake the Demon. Show the 'This character selected you' card, then Barber token. The Demon either shows a 'no' head signal, or points to 2 players. If they chose players: Swap the character tokens. Wake each player. Show 'You are', then their new character token.",
-    "reminders": ["Haircuts tonight"],
+    "reminders": ["Barbier mort aujourd'hui"],
     "setup": false,
-    "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters."
+    "ability": "Si vous êtes mort dans la journée ou cette nuit, le Démon peut choisir 2 joueurs (mais pas un autre Démon) qui échangent alors leur rôle."
   },
   {
     "id": "klutz",
-    "name": "Klutz",
+    "name": "Maladroit",
     "edition": "snv",
     "team": "outsider",
     "firstNight": 0,
@@ -980,33 +980,33 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses."
+    "ability": "Lorsque vous apprenez que vous êtes mort, choisissez publiquement 1 joueur en vie. S’il est maléfique, votre équipe perd."
   },
   {
     "id": "eviltwin",
-    "name": "Evil Twin",
+    "name": "Jumelle maléfique",
     "edition": "snv",
     "team": "minion",
     "firstNight": 23,
     "firstNightReminder": "Wake the Evil Twin and their twin. Confirm that they have acknowledged each other. Point to the Evil Twin. Show their Evil Twin token to the twin player. Point to the twin. Show their character token to the Evil Twin player.",
     "otherNight": 0,
     "otherNightReminder": "",
-    "reminders": ["Twin"],
+    "reminders": ["Jumelle"],
     "setup": false,
-    "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live."
+    "ability": "Vous et un joueur adverse vous connaissez mutuellement. Si le joueur bon est exécuté, le Mal gagne. Le Bien ne peut pas gagner si vous restez tous les deux en vie."
   },
   {
     "id": "witch",
-    "name": "Witch",
+    "name": "Sorcière",
     "edition": "snv",
     "team": "minion",
     "firstNight": 24,
     "firstNightReminder": "The Witch points to a player. If that player nominates tomorrow they die immediately.",
     "otherNight": 14,
     "otherNightReminder": "If there are 4 or more players alive: The Witch points to a player. If that player nominates tomorrow they die immediately.",
-    "reminders": ["Cursed"],
+    "reminders": ["Maudit"],
     "setup": false,
-    "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability."
+    "ability": "Chaque nuit, choisissez un joueur : s’il nomme quelqu’un le lendemain, il meurt. S’il ne reste que 3 joueurs en vie, vous perdez cette capacité."
   },
   {
     "id": "cerenovus",
@@ -1017,13 +1017,13 @@
     "firstNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
     "otherNight": 15,
     "otherNightReminder": "The Cerenovus points to a player, then to a character on their sheet. Wake that player. Show the 'This character selected you' card, then the Cerenovus token. Show the selected character token. If the player is not mad about being that character tomorrow, they can be executed.",
-    "reminders": ["Mad"],
+    "reminders": ["Fou"],
     "setup": false,
-    "ability": "Each night, choose a player & a good character: they are \u201Cmad\u201D they are this character tomorrow, or might be executed."
+    "ability": "Chaque nuit, choisissez un joueur et un rôle bon : le lendemain, il doit être « fou » d’être ce rôle. Sinon, il pourrait être exécuté."
   },
   {
     "id": "pithag",
-    "name": "Pit-Hag",
+    "name": "Guenaude",
     "edition": "snv",
     "team": "minion",
     "firstNight": 0,
@@ -1032,7 +1032,7 @@
     "otherNightReminder": "The Pit-Hag points to a player and a character on the sheet. If this character is not in play, wake that player and show them the 'You are' card and the relevant character token. If the character is in play, nothing happens.",
     "reminders": [],
     "setup": false,
-    "ability": "Each night*, choose a player & a character they become (if not-in-play). If a Demon is made, deaths tonight are arbitrary."
+    "ability": "Chaque nuit*, choisissez un joueur et le rôle qu’il devient (s’il n’est pas en jeu). Si un Démon nait de cette façon, les morts de cette nuit sont arbitraires."
   },
   {
     "id": "fanggu",
@@ -1043,10 +1043,10 @@
     "firstNightReminder": "",
     "otherNight": 29,
     "otherNightReminder": "The Fang Gu points to a player. That player dies. Or, if that player was an Outsider and there are no other Fang Gu in play: The Fang Gu dies instead of the chosen player. The chosen player is now an evil Fang Gu. Wake the new Fang Gu. Show the 'You are' card, then the Fang Gu token. Show the 'You are' card, then the thumb-down 'evil' hand sign.",
-    "reminders": ["Dead",
-        "Once"],
+    "reminders": ["Mort",
+        "Une fois"],
     "setup": true,
-    "ability": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]"
+    "ability": "Chaque nuit*, choisissez un joueur : il meurt. Le premier Marginal tué ainsi devient un Fang Gu maléfique et vous mourez à sa place. [+1 Marginal]"
   },
   {
     "id": "vigormortis",
@@ -1057,11 +1057,11 @@
     "firstNightReminder": "",
     "otherNight": 32,
     "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbours is poisoned.",
-    "reminders": ["Dead",
-        "Has ability",
-        "Poisoned"],
+    "reminders": ["Mort",
+        "A une capacité",
+        "Empoisonné"],
     "setup": true,
-    "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. [\u22121 Outsider]"
+    "ability": "Chaque nuit*, choisissez un joueur : il meurt. Les Sbires que vous tuez gardent leur capacité et empoisonnent 1 Villageois voisin. [-1 Marginal]"
   },
   {
     "id": "nodashii",
@@ -1072,10 +1072,10 @@
     "firstNightReminder": "",
     "otherNight": 30,
     "otherNightReminder": "The No Dashii points to a player. That player dies.",
-    "reminders": ["Dead",
-        "Poisoned"],
+    "reminders": ["Mort",
+        "Empoisonné"],
     "setup": false,
-    "ability": "Each night*, choose a player: they die. Your 2 Townsfolk neighbours are poisoned."
+    "ability": "Chaque nuit*, choisissez un joueur : il meurt. Vos 2 Villageois voisins sont empoisonnés."
   },
   {
     "id": "vortox",
@@ -1086,9 +1086,9 @@
     "firstNightReminder": "",
     "otherNight": 31,
     "otherNightReminder": "The Vortox points to a player. That player dies.",
-    "reminders": ["Dead"],
+    "reminders": ["Mort"],
     "setup": false,
-    "ability": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins."
+    "ability": "Chaque nuit*, choisissez un joueur : il meurt. Les capacités des Villageois donnent de fausses informations. Chaque jour, si personne n’est exécuté, le Mal gagne."
   },
   {
     "id": "barista",
@@ -1099,27 +1099,27 @@
     "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
     "otherNight": 1,
     "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
-    "reminders": ["Sober & Healthy",
-        "Ability twice"],
+    "reminders": ["Sobre et sain",
+        "Agit deux fois"],
     "setup": false,
-    "ability": "Each night, until dusk, 1) a player becomes sober, healthy and gets true info, or 2) their ability works twice. They learn which."
+    "ability": "Chaque nuit, jusqu’au crépuscule, un joueur reçoit un effet : 1) il devient sobre, sain et obtient de vraies infos, ou 2) sa capacité fonctionne deux fois. Il apprend lequel des 2 effets il a reçu."
   },
   {
     "id": "harlot",
-    "name": "Harlot",
+    "name": "Galante",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 1,
     "otherNightReminder": "The Harlot points at any player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
-    "reminders": ["Dead"],
+    "reminders": ["Mort"],
     "setup": false,
-    "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die."
+    "ability": "Chaque nuit*, choisissez un joueur en vie : s’il est d’accord, vous apprenez son rôle, mais vous pourriez mourir tous les deux."
   },
   {
     "id": "butcher",
-    "name": "Butcher",
+    "name": "Boucher",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
@@ -1128,25 +1128,25 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "Each day, after the 1st execution, you may nominate again."
+    "ability": "Chaque jour, après la première exécution, vous pouvez à nouveau nommer un joueur."
   },
   {
     "id": "bonecollector",
-    "name": "Bone Collector",
+    "name": "Collecteur d'os",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 1,
     "otherNightReminder": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
-    "reminders": ["No ability",
-        "Has ability"],
+    "reminders": ["Sans capacité",
+        "A une capacité"],
     "setup": false,
-    "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk."
+    "ability": "Une fois par partie, la nuit*, choisissez un joueur mort : il regagne sa capacité jusqu’au crépuscule."
   },
   {
     "id": "deviant",
-    "name": "Deviant",
+    "name": "Déviant",
     "edition": "snv",
     "team": "traveler",
     "firstNight": 0,
@@ -1155,7 +1155,7 @@
     "otherNightReminder": "",
     "reminders": [],
     "setup": false,
-    "ability": "If you were funny today, you cannot die by exile."
+    "ability": "Si vous avez été drôle ce jour, vous ne pouvez pas mourir par exil."
   },
   {
     "id": "noble",

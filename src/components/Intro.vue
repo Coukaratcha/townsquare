@@ -1,6 +1,6 @@
 <template>
   <div class="intro">
-    <img src="static/apple-icon.png" alt="" class="logo" />
+    <img src="../assets/demon-head2.png" alt="" class="logo" />
     <div>
       Bienvenue sur le (non officiel) <b>Village et Grimoire Virtuel</b> pour Blood on the Clocktower&nbsp;!
       Veuillez ajouter plus de joueurs via le 
@@ -84,9 +84,6 @@ export default {
     width: 25vh;
     margin-bottom: 2vh;
     max-width: 192px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px black;
-    border: 3px solid black;
   }
   .footer {
     font-size: 60%;

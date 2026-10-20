@@ -11,13 +11,13 @@
       title="Show Character Reference"
     />
     <h3>
-      Night Order
+      Ordre de la Nuit
       <font-awesome-icon icon="cloud-moon" />
       {{ edition.name || "Custom Script" }}
     </h3>
     <div class="night">
       <ul class="first">
-        <li class="headline">First Night</li>
+        <li class="headline">Première Nuit</li>
         <li
           v-for="role in rolesFirstNight"
           :key="role.name"

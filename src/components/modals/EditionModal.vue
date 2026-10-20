@@ -1,7 +1,7 @@
 <template>
   <Modal class="editions" v-if="modals.edition" @close="toggleModal('edition')">
     <div v-if="!isCustom">
-      <h3>Select an edition:</h3>
+      <h3>Choisissez une édition :</h3>
       <ul class="editions">
         <li
           v-for="edition in editions"
@@ -24,29 +24,27 @@
             backgroundImage: `url(${require('../../assets/editions/custom.png')})`
           }"
         >
-          Custom Script / Characters
+          Script / Personnages personnalisés
         </li>
       </ul>
     </div>
     <div class="custom" v-else>
-      <h3>Load custom script / characters</h3>
-      To play with a custom script, you need to select the characters you want
-      to play with in the official
+      <h3>Charger un script / des rôles personnalisés</h3>
+      Pour jouer avec un script personnalisé, vous devez sélectionner les rôles avec lesquels vous souhaitez jouer dans l'outil officiel
       <a href="https://script.bloodontheclocktower.com/" target="_blank"
-        >Script Tool</a
+        >Outil de Script</a
       >
-      and then upload the generated "custom-list.json" either directly here or
-      provide a URL to such a hosted JSON file.<br />
+      et charger le fichier JSON généré "custom-list.json", soit directement ici, soit en fournissant une URL vers un fichier JSON hébergé.<br />
       <br />
-      To play with custom characters, please read
+      Pour jouer avec des rôles personnalisés, veuillez lire
       <a
         href="https://github.com/bra1n/townsquare#custom-characters"
         target="_blank"
-        >the documentation</a
+        >la documentation</a
       >
-      on how to write a custom character definition file.
-      <b>Only load custom JSON files from sources that you trust!</b>
-      <h3>Some popular custom scripts:</h3>
+      sur la façon d'écrire un fichier de rôles personnalisés.
+      <b>Ne chargez que des fichiers JSON personnalisés provenant de sources fiables !</b>
+      <h3>Quelques scripts personnalisés populaires :</h3>
       <ul class="scripts">
         <li
           v-for="(script, index) in scripts"
@@ -64,16 +62,16 @@
       />
       <div class="button-group">
         <div class="button" @click="openUpload">
-          <font-awesome-icon icon="file-upload" /> Upload JSON
+          <font-awesome-icon icon="file-upload" /> Charger un JSON
         </div>
         <div class="button" @click="promptURL">
-          <font-awesome-icon icon="link" /> Enter URL
+          <font-awesome-icon icon="link" /> Entrer une URL
         </div>
         <div class="button" @click="readFromClipboard">
-          <font-awesome-icon icon="clipboard" /> Use JSON from Clipboard
+          <font-awesome-icon icon="clipboard" /> Charger depuis le presse-papiers
         </div>
         <div class="button" @click="isCustom = false">
-          <font-awesome-icon icon="undo" /> Back
+          <font-awesome-icon icon="undo" /> Retour
         </div>
       </div>
     </div>
@@ -143,7 +141,7 @@ export default {
       }
     },
     promptURL() {
-      const url = prompt("Enter URL to a custom-script.json file");
+      const url = prompt("Entrez l'URL d'un fichier custom-script.json");
       if (url) {
         this.handleURL(url);
       }

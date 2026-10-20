@@ -31,7 +31,7 @@
     >
       <h3>
         <span v-if="session.isSpectator">Other characters</span>
-        <span v-else>Demon bluffs</span>
+        <span v-else>Bluffs du Démon</span>
         <font-awesome-icon icon="times-circle" @click.stop="toggleBluffs" />
         <font-awesome-icon icon="plus-circle" @click.stop="toggleBluffs" />
       </h3>
@@ -155,7 +155,7 @@ export default {
       if (this.session.isSpectator || this.session.lockedVote) return;
       if (
         confirm(
-          `Do you really want to remove ${this.players[playerIndex].name}?`
+          `Voulez-vous vraiment supprimer ${this.players[playerIndex].name}?`
         )
       ) {
         const { nomination } = this.session;

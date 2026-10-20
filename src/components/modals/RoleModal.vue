@@ -1,7 +1,7 @@
 <template>
   <Modal v-if="modals.role && availableRoles.length" @close="close">
     <h3>
-      Choose a new character for
+      Choisissez un nouveau rôle pour
       {{
         playerIndex >= 0 && players.length
           ? players[playerIndex].name
@@ -36,13 +36,13 @@
         class="button"
         :class="{ townsfolk: tab === 'editionRoles' }"
         @click="tab = 'editionRoles'"
-        >Edition Roles</span
+        >Rôles de l'Édition</span
       >
       <span
         class="button"
         :class="{ townsfolk: tab === 'otherTravelers' }"
         @click="tab = 'otherTravelers'"
-        >Other Travelers</span
+        >Autres Voyageurs</span
       >
     </div>
   </Modal>

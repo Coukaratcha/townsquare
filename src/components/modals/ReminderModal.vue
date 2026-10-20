@@ -3,7 +3,7 @@
     v-if="modals.reminder && availableReminders.length && players[playerIndex]"
     @close="toggleModal('reminder')"
   >
-    <h3>Choose a reminder token:</h3>
+    <h3>Choisissez un jeton de rappel :</h3>
     <ul class="reminders">
       <li
         v-for="reminder in availableReminders"
@@ -97,7 +97,7 @@ export default {
       const player = this.$store.state.players.players[this.playerIndex];
       let value;
       if (reminder.role === "custom") {
-        const name = prompt("Add a custom reminder note");
+        const name = prompt("Ajoutez un jeton de rappel personnalisé");
         if (!name) return;
         value = [...player.reminders, { role: "custom", name }];
       } else {

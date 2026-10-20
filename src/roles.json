@@ -76,7 +76,7 @@
     "firstNightReminder": "The Fortune Teller points to two players. Give the head signal (nod yes, shake no) for whether one of those players is the Demon. ",
     "otherNight": 54,
     "otherNightReminder": "The Fortune Teller points to two players. Show the head signal (nod 'yes', shake 'no') for whether one of those players is the Demon.",
-    "reminders": ["Faux positif"],
+    "reminders": ["Leurre"],
     "setup": false,
     "ability": "Chaque nuit, choisissez 2 joueurs et apprenez si un Démon est parmi eux. Un des joueurs bons vous apparaît comme un Démon."
   },

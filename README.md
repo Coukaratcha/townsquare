@@ -1,21 +1,19 @@
 # Blood on the Clocktower Grimoire & Town Square
 
-> :warning: **This project is no longer actively maintained** and will only receive critical bug fixes. :warning:
-
-![social](https://user-images.githubusercontent.com/325521/102897760-d1147b00-4468-11eb-9d7b-63a204bc9fc1.png)
-
 This is an unofficial online tool to run Blood on the Clocktower games through Discord or other digital means.
 It is supposed to aid storytellers and players by allowing them to quickly set up games, run votes and much more.
 
-[You can try it online!](https://clocktower.online)
+[You can try it online!](https://clocktower.coukaratcha.fr)
 
-If you want to learn more about how to use the app as a player, [JayBotC](https://www.youtube.com/channel/UCNZy-4Rp877XtTHaIZdWYFQ) kindly created two tutorial videos.
+## Installation
 
-### How to host a game
-[![How to host a game](https://img.youtube.com/vi/lVRJPBXfqxg/0.jpg)](https://www.youtube.com/watch?v=lVRJPBXfqxg)
+Get the repository through `git clone` or download zip archive.
 
-### How to play a game
-[![How to play a game](https://img.youtube.com/vi/VCpFnJFiCbk/0.jpg)](https://www.youtube.com/watch?v=VCpFnJFiCbk)
+Create a `.env` file with `PORT=<host_port>` to set the listening port on host machine, and create a reverse-proxy to redirect from domain name.
+
+Build the docker image with `docker compose build`
+
+Run the stack with `docker compose up`, you can either add `-d` or later press `d` to run as daemon process.
 
 ## Features
 
@@ -52,14 +50,14 @@ for example. The logo will be shown to your players after they have enabled cust
 ### Custom Character Support
 
 In order to add custom characters to your local Grimoire, you need to create a JSON definition for them,
-similar to what is provided in the [`roles.json`](https://github.com/bra1n/townsquare/blob/main/src/roles.json) for the 3 base editions. Here's an example of how such a character
+similar to what is provided in the [`roles.json`](https://github.com/Coukaratcha/townsquare/blob/main/src/roles.json) for the 3 base editions. Here's an example of how such a character
 definition file might be written:
 
 ```json
 [
   {
     "id": "acrobat",
-    "image": "https://github.com/bra1n/townsquare/blob/main/src/assets/icons/acrobat.png?raw=true",
+    "image": "https://github.com/Coukaratcha/townsquare/blob/main/src/assets/icons/acrobat.png?raw=true",
     "edition": "custom",
     "firstNight": 0,
     "firstNightReminder": "",
@@ -110,15 +108,8 @@ For base game characters, it is sufficient to only provide the ID, similar to wh
 ## Acknowledgements and Copyrights
 
 * [Blood on the Clocktower](https://bloodontheclocktower.com/) is a trademark of Steven Medway and [The Pandemonium Institute](https://www.thepandemoniuminstitute.com/)
-* Night reminders and other auxiliary text written by [Ben Finney](http://bignose.whitetree.org/projects/botc/diy/)
 * Iconography by [Font Awesome](https://fontawesome.com/)
-* Background image copyright and permission granted by [Ryan Maloney](https://www.artstation.com/maloney94)
 * Webfonts by [Google Fonts](https://fonts.google.com/) and [Online Web Fonts](https://www.onlinewebfonts.com/)
 * All other images and icons are copyright to their respective owners
 
 This project and its website are provided free of charge and not affiliated with The Pandemonium Institute in any way.
-
-## Donations
-This project will always be available free of charge, since I love building cool things and playing Blood on the Clocktower. If you still want to support me with a donation, you can do that here:
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/bra1n)
